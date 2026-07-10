@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- estilado -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>TaskFlow</title>
 </head>
 <body>
+
+    <section>
+        <!-- cabecera y titulo del task -->
+        <header>TaskFlow</header>
+        <h1>Gestión de Tareas</h1>
+    </section>
+
+    <section>
+        <!-- formulario para la obtencion de los datos -->
+        <form id="task-form">
+            <!-- inputs de los datos a registrar -->
+            <input type="text" id="input-title" placeholder="Titulo de la tarea">
+            <input type="text" id="input-description" placeholder="Descripción de la tarea">
+            <input type="datetime-local" id="input-date">
+            <!-- boton tipo submit para enviar la peticion de ingreso de los datos -->
+            <button type="submit">Agregar Tarea</button>
+        </form>
+    </section>
+
+    <section>
+        <!-- lista de tareas -->
+         <ul id="lista-tareas"></ul>
+    </section>
     
+
+    <!-- logica js -->
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
